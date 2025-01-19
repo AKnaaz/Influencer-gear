@@ -1,0 +1,235 @@
+/* shared style */
+body{
+    font-family: "Poppins";
+    background: rgb(255, 255, 255);
+}
+.dark-1{
+    color: rgb(58, 58, 58);
+}
+.dark-2{
+    color: rgb(24, 25, 31);
+}
+.dark-3{
+    color: rgb(94, 99, 102);
+}
+.dark-4{
+    color: rgb(120, 120, 133);
+}
+.dark-5{
+    color: rgb(10, 8, 38);
+}
+.dark-6{
+    color: rgb(108, 108, 108);
+}
+.dark-7{
+    color: rgb(255, 255, 255);
+}
+.dark-8{
+    color: rgb(217, 219, 225);
+}
+.dark-9{
+    color: rgba(0, 0, 0, 0.87);
+}
+.btn-primary{
+    padding: 10px 24px 10px 24px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+/* header style */
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+.nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 36px;
+}
+nav, .banner{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* banner style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.banner-img img{
+    width: 440px;
+    height: 414px;
+    width: 100%;
+    border: 1px dotted rgba(128, 0, 128, 0.514);
+    height: 414px;
+}
+.banner-img{
+    width: 475px;
+    height: 420px;
+    border: 1px dashed rgba(128, 0, 128, 0.514);
+    padding: 30px 33px 31px 2px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-content{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+}
+.banner-container{
+    margin-top: 20px;
+}
+
+/* companies style */
+.companies{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+.companies-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 24px;
+}
+
+/* collection style */
+.collection{
+    max-width: 1047px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0px 30px;
+}
+.collection-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+.collection-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.collection-box{
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 17px 15px 50px 15px;
+}
+.collection-box img{
+    
+    border-radius: 5px;
+}
+.collection-sub-title{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+.price{
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+.star i{
+    color: rgb(251, 130, 0);
+}
+.collection-des{
+font-family: Inter;
+font-size: 1rem;
+font-weight: 700;
+line-height: 143%;
+letter-spacing: 1.8%;
+}
+.star span{
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+.btn-see{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    /* text-align: end; */
+}
+.see{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+}
+.btn-see i{
+    color: rgba(224, 44, 109, 0.87);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+
+
+/* responsive media query */
+/* small device */
+@media screen and (max-width: 576px) {
+    nav,
+    ul{
+        flex-direction: column;
+    }
+    nav ul a{
+        margin-bottom: 8px;
+        padding-right: 25px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+    .companies-container{
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+    .collection-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+}
